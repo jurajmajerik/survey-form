@@ -1,0 +1,63 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+#form-outer {
+  padding: 20px 20px 20px 20px;
+  background-color: #D8E9C8;
+}
+
+.area-left {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.area-right {
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+.labels {
+  text-align: right;
+}
+
+.inputs {
+  text-align: left;
+}
+
+.full-width {
+}
+
+@media (max-width: 767.99px) {
+  .row {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .area-left {
+    padding-left: 0px;
+  }
+  .area-right {
+    padding-right: 0px;
+  }
+  .labels {
+    text-align: left;
+  }
+  .inputs {
+    text-align: left;
+  }
+}
+
+#message {
+  height: 60px;
+  resize: vertical;
+}
+
+@media (max-width: 767.99px) {
+  #message {
+    width: 100%;
+  }
+}

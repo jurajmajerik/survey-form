@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js" charset="utf-8"></script>
+    <title>Survey Form</title>
+  </head>
+  <body>
+
+    <div class="container text-center">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Description</p>
+    </div>
+
+    <form id="survey-form" action="index.html" method="post">
+      <div class="container border rounded" id="form-outer">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 area-left">
+              <div class="labels">
+                <label for="name" id="name-label">* Name: </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 area-right">
+              <div class="inputs">
+                <input autofocus type="text" name="name" id="name" placeholder="Enter your name" required>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 area-left">
+              <div class="labels">
+                <label for="email" id="email-label">* Email: </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 area-right">
+              <div class="inputs">
+                <input autofocus type="email" name="email" id="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 area-left">
+              <div class="labels">
+                <label for="age" id="number-label">* Age: </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 area-right">
+              <div class="inputs">
+                <input autofocus type="number" name="age" id="number" min="1" max="120" placeholder="Age" required>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 area-left">
+              <div class="labels">
+                <label for="continent" id="dropdown-label">Continent: </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 area-right">
+              <select id="dropdown" name="continent">
+                <option value="north-america">North America</option>
+                <option value="south-america">South America</option>
+                <option value="africa">Africa</option>
+                <option value="europe">Europe</option>
+                <option value="asia">Asia</option>
+                <option value="australia-oceania">Australia/Oceania</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 area-left">
+              <div class="labels">
+                <label for="gender" id="radio-gender">Gender: </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 area-right">
+              <div class="inputs">
+                <input type="radio" name="gender" value="1"> Male
+                <input type="radio" name="gender" value="2"> Female
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 area-left">
+              <div class="labels">
+                <label for="specialization" id="checkbox">Specialization: </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 area-right">
+              <div class="inputs">
+                <input type="checkbox" name="specialization" value="FE"> Front-End
+                <input type="checkbox" name="specialization" value="BE"> Back-End
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 area-left">
+              <div class="labels">
+                <label for="message">Leave your message here: </label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 area-right">
+              <div class="inputs">
+                <textarea id="message" name="message" placeholder="I'd like to ask..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-12 full-width">
+              <button id="submit" type="submit" name="submit" class="btn btn-dark">Submit</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+
+  </body>
+</html>
